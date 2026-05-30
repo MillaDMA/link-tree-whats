@@ -17,6 +17,32 @@
       background-repeat: no-repeat;                 
     }
 
+.footer-atribuicao {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 1rem; /* Dá um espacinho da borda da tela */
+    z-index: 1050; /* Garante que fique por cima do fundo */
+}
+
+.footer-texto {
+    font-size: 0.7rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6c757d;
+    margin: 0; /* Remove margens que possam desalinhá-lo */
+}
+
+.footer-link {
+    text-decoration: none;
+    color: #6c757d;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    color: #495057; /* Escurece um pouquinho quando passa o mouse */
+    text-decoration: underline; /* Mostra o sublinhado só no hover */
+}
+
     .card-style {
       display: flex;
       flex-direction: column;
