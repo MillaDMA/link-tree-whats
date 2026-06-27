@@ -1,0 +1,151 @@
+
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;     
+      min-height: 100vh;       
+      margin: 0;               
+      background-color: #3b2621; 
+      width: 100vw;
+      overflow-x: hidden;
+
+      /* Caminho da imagem */
+      background-image: url('../img/bg-copa.jpeg');
+      background-size: cover;                    
+      background-position: center;                   
+      background-repeat: no-repeat;                 
+    }
+
+    .card-style {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      text-align: center;
+      width: 50vw;       
+      min-width: 320px;  
+      max-width: 700px;  
+      background-color: rgba(0, 0, 0, 0.45) !important; 
+      backdrop-filter: blur(8px); 
+      -webkit-backdrop-filter: blur(8px);
+      border: none !important;
+      border-radius: 15px;
+      padding: 2rem;     
+    }
+
+      /* Estiliza apenas o botão desativado acima do título */
+.btn-secondary {
+    border-radius: 50px !important; /* Deixa o botão redondo */
+    padding: 10px 30px !important;  /* Ajusta o tamanho se necessário */
+    background-color: red !important; /* Deixa ele vermelho */
+    border-color: red !important;
+}
+
+    .card-title-style {
+      color: #5160e4;
+      font-size: 3rem; /* para telas menores operarem sem problemas */
+      font-family: 'playfairdisplay', sans-serif;
+      margin-top:auto;
+      margin: 1rem 0;
+    }
+
+    .card-subtitle-style {
+      color: whitesmoke;
+      font-size: 1.3rem; /* Ajustado proporcionalmente */
+      margin-bottom: 2rem;
+    }
+
+    .btn-size-adjust {
+      display: inline-flex;      
+      justify-content: center;   /* Centraliza horizontalmente */
+      align-items: center;
+      width: 85%; 
+      min-height: 4rem;
+      max-width: 100%; 
+      margin: 0.6rem 0; 
+      cursor: pointer;
+
+      font-size: 1rem;
+      text-align: center;
+      text-decoration: none;
+      font-family: 'Montoserrat', sans-serif;
+      margin: 0.6rem 0; /* Espaçamento equilibrado entre um botão e outro */
+
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn-style-context {
+      border: 0.05rem solid transparent;
+      border-radius: 50px;
+
+      /* Cores de fundo e borda */
+      background-image: 
+        linear-gradient(141deg, #679665, #4aa52e, #23cd75), 
+        linear-gradient(to right, #d4af37, #ffdf00);        
+      
+      background-origin: border-box;
+      background-clip: padding-box, border-box;
+
+      box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+      color: white; 
+    }  
+
+    .btn-style-text {
+      font-weight: bold;
+      font-size: 1rem;
+      color: #ffffff !important;
+    }
+
+    a{
+      text-decoration: none;
+      color: #ffffff !important;
+      
+    }
+    .btn-style-text:hover{
+      font-size: 2rem;
+      color:  #3e18b0!important;
+      transform: scale(1.04); /* Dá o zoom elegante sem entortar as letras */
+      box-shadow: 0px 12px 20px rgba(214, 175, 55, 0.35); 
+      filter: brightness(1.2);
+  
+
+    }
+
+    /* ==============================================
+       RESPONSIVIDADE: AJUSTES PARA TELAS DE CELULAR
+       ============================================== */
+    @media (max-width: 768px) {
+      body {
+        padding: 1rem; /* Dá uma folga nas bordas da tela para o card não colar nas laterais */
+        justify-content: flex-start; /* No celular, começa do topo para o rodapé não encavalar */
+        padding-top: 2rem;
+      }
+
+      .card-style {
+        width: 100%; /* O card passa a usar toda a largura disponível no celular */
+        padding: 2rem 1rem; /* Diminui o recuo interno para ganhar espaço para o texto */
+      }
+
+      .card-title-style {
+        font-size: 2.2rem; /* Diminui o título para ele não quebrar linha no celular */
+      }
+
+      .card-subtitle-style {
+        font-size: 1rem; /* Subtítulo mais discreto no mobile */
+        margin-bottom: 1.8rem;
+      }
+
+      .btn-size-adjust {
+        width: 95%; /* Botões ligeiramente mais largos no celular para facilitar o clique com o polegar */
+        padding: 1rem 1.2rem !important; /* Mantém o botão gordinho, mas sem exagerar */
+      }
+      
+      .attribution-footer {
+        position: relative; /* Destrava o rodapé do fundo da tela para evitar que ele fique em cima do card */
+        margin-top: 2rem;
+        bottom: 0;
+      }
+    }
+  
