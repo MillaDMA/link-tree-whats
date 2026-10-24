@@ -11,7 +11,7 @@
       overflow-x: hidden;
 
       /* Caminho da imagem */
-      background-image: url('../img/bg-copa.jpeg');
+      background-image: url('../img/bg-natal.png');
       background-size: cover;                    
       background-position: center;                   
       background-repeat: no-repeat;                 
@@ -43,7 +43,7 @@
 }
 
     .card-title-style {
-      color: #5160e4;
+      color: #d8e451;
       font-size: 3rem; /* para telas menores operarem sem problemas */
       font-family: 'playfairdisplay', sans-serif;
       margin-top:auto;
